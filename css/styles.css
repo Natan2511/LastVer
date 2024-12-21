@@ -1,0 +1,1691 @@
+/* Основные стили */
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    background: linear-gradient(221deg, rgba(146, 51, 172, 1) 0%, rgba(103, 48, 135, 1) 56%, rgba(146, 19, 242, 1) 100%);
+    background: url(..//images/bacground.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.text,
+.separator,
+.zipper,
+.hoop,
+.arrow__hoop,
+.zeus,
+.chest {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    width: 90%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.separator {
+    width: 80%;
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+.zipper {
+    width: 100%;
+    max-width: 500px;
+    z-index: 4;
+}
+
+.hoop {
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    z-index: 6;
+    top: 4%;
+}
+
+.prizz {
+    position: absolute;
+    width: 90%;
+    max-width: 450px;
+    height: 382.5px;
+    top: 4%;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.prizz span {
+    position: absolute;
+    display: block;
+    width: 100px;
+    text-align: center;
+    font-family: "Montserrat";
+    color: rgb(57, 37, 15);
+    font-weight: bold;
+    line-height: 1;
+    text-shadow: 0px 1px 30.72px rgba(179, 150, 129, 0.5);
+}
+
+.prizz span:nth-child(1) {
+    transform: rotate(-1deg) translateX(136px) rotate(91deg);
+}
+
+.prizz span:nth-child(2) {
+    transform: rotate(45deg) translateX(126px) rotate(85deg);
+}
+
+.prizz span:nth-child(3) {
+    transform: rotate(90deg) translateX(128px) rotate(-270deg);
+}
+
+.prizz span:nth-child(4) {
+    transform: rotate(135deg) translateX(130px) rotate(-272deg);
+}
+
+.prizz span:nth-child(5) {
+    transform: rotate(180deg) translateX(137px) rotate(-271deg);
+}
+
+.prizz span:nth-child(6) {
+    transform: rotate(225deg) translateX(126px) rotate(-272deg);
+}
+
+.prizz span:nth-child(7) {
+    transform: rotate(270deg) translateX(130px) rotate(-270deg);  
+}
+
+.prizz span:nth-child(8) {
+    transform: rotate(316deg) translateX(134px) rotate(84deg);
+}
+
+.wrapper__hoop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.btn__center {
+    top: 35%;
+    padding: 0;
+    width: 60%;
+    max-width: 150px;
+    position: absolute;
+    z-index: 25;
+    background: transparent;
+    border: none;
+}
+
+.btn__center img {
+    width: 100%;
+}
+
+.btn__center p {
+    color: rgb(63, 44, 23);
+    font-weight: 800;
+    line-height: 1.318;
+    text-shadow: 0px 1px 30.72px rgba(137, 142, 144, 0.5);
+    position: absolute;
+    z-index: 30;
+    text-transform: uppercase;
+    font-size: 18px;
+    left: 30px;
+    top: 65px;
+}
+
+.arrow__hoop {
+    width: 13%;
+    max-width: 60px;
+    position: absolute;
+    z-index: 8;
+    top: 2%;
+}
+
+.zeus {
+    width: 91%;
+    max-width: 400px;
+    height: 41%;
+    position: absolute;
+    z-index: 8;
+    bottom: 0;
+}
+
+.energy {
+    width: 74%;
+    max-width: 335px;
+    height: 42%;
+    position: absolute;
+    z-index: 7;
+    bottom: 0;
+}
+
+.ost {
+    width: 39%;
+    max-width: 170px;
+    position: absolute;
+    z-index: 8;
+    right: 4px;
+    bottom: 31%;
+}
+
+.left__btn {
+    width: 100%;
+}
+
+.ost__text {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    left: 42px;
+}
+
+#number {
+    font-weight: bold;
+    font-size: 17px;
+    position: absolute;
+    color: rgb(55, 38, 20);
+    line-height: 1.275;
+    top: 10px;
+    left: 11px;
+}
+
+.btn__center:hover{
+    transition: all 500ms ease-in-out;
+    transform: scale(1.05);
+}
+
+.coins {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    width: 50%;
+}
+
+.chest {
+    position: absolute;
+    z-index: 11;
+    right: 0;
+    width: 32%;
+    height: 20%;
+    bottom: 0;
+    max-width: 265px;
+}
+
+.button__twist {
+    max-width: 200px;
+    padding: 0;
+    padding-top: 5px;
+    position: absolute;
+    z-index: 25;
+    bottom: 5%;
+    width: 46%;
+    height: 7%;
+    background: url(..//images/btn_twist2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 14px;
+    display: flex;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.53;
+    text-shadow: 0px 6px 20.16px rgba(4, 4, 4, 0.8);
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    left: 28%;
+}
+.button__twist7 {
+    max-width: 200px;
+    padding: 0;
+    padding-top: 5px;
+    position: absolute;
+    z-index: 25;
+    bottom: 5%;
+    width: 46%;
+    height: 7%;
+    background: url(..//images/btn_twist.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 22px;
+    display: flex;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.53;
+    text-shadow: 0px 6px 20.16px rgba(4, 4, 4, 0.8);
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    left: 28%;
+}
+
+/* Медиа-запросы */
+@media (min-width: 769px) {
+    .btn__center{
+        width: 24%;
+        top: 31%;
+    }
+
+    .btn__center p {
+        left: 15px;
+        top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .text {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .separator {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .btn__center {
+        width: 26%;
+        top: 29%;
+    }
+
+    .btn__center p {
+        left: 21px;
+        top: 55px;
+    }
+
+    .coins {
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        width: 94%;
+    }
+
+    .zeus {
+        width: 91%;
+        max-width: 470px;
+    }
+
+    .energy {
+        max-width: 360px;
+    }
+}
+
+@media screen and (min-width: 426px) {
+    .prizz {
+        top: 10%;
+    }
+
+    .prizz span:nth-child(1) {
+        transform: rotate(0deg) translateX(155px) rotate(91deg);
+    }
+
+    .prizz span:nth-child(2) {
+        transform: rotate(44deg) translateX(147px) rotate(86deg);
+    }
+
+    .prizz span:nth-child(3) {
+        transform: rotate(90deg) translateX(136px) rotate(-270deg);
+    }
+
+    .prizz span:nth-child(4) {
+        transform: rotate(137deg) translateX(150px) rotate(-272deg);
+    }
+
+    .prizz span:nth-child(5) {
+        transform: rotate(181deg) translateX(157px) rotate(-272deg);
+    }
+
+    .prizz span:nth-child(6) {
+        transform: rotate(226deg) translateX(151px) rotate(-274deg);
+    }
+
+    .prizz span:nth-child(7) {
+        transform: rotate(270deg) translateX(149px) rotate(-270deg);
+    }
+
+    .prizz span:nth-child(8) {
+        transform: rotate(315deg) translateX(155px) rotate(86deg);
+    }
+}
+
+@media (max-width: 480px) {
+    .btn__center p {
+        font-size: 16px;
+        left: 15px;
+        top: 47px;
+    }
+}
+
+#number.small-number {
+    left: 15px;
+}
+
+@keyframes increaseSize {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animated {
+    animation: increaseSize 3s infinite;
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+.modal2 {
+    display: none;
+    /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+/* Стили для контента модального окна */
+.modal-content {
+    position: relative;
+    /* Для абсолютного позиционирования затемненного фона */
+    height: 80%;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    background: transparent;
+    /* Фоновое изображение */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content2 {
+    position: relative;
+    /* Для абсолютного позиционирования затемненного фона */
+    height: 80%;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    text-align: center;
+    background: transparent;
+    /* Фоновое изображение */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Затемненный фон внутри контента модального окна */
+.content__modal {
+    height: 67.5%;
+    display: flex;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url(..//images/frame.png);
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.content__modal2 {
+    height: 77.5%;
+    display: flex;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url(..//images/frame.png);
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text2{
+    width: 80%;
+    margin-top: 20px;
+}
+.text3{
+    width: 90%;
+    margin-top: 15px;
+}
+.text4 {
+    font-weight: 700;
+    padding: 15px 0;
+}
+.text5 {
+    text-align: start;
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+.text4__1{
+    color: orange;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.text6{
+    text-align: start;
+    font-size: 13.9px;
+    padding-bottom: 15px;
+}
+
+.text7{
+    text-align: start;
+    font-size: 12.9px;
+    padding-bottom: 15px;
+    padding-left: 31px;
+    letter-spacing: 0.2px;
+    line-height: 17px;
+}
+
+.text8{
+    font-size: 9px;
+    text-align: start;
+    font-style: italic;
+}
+
+.coins2{
+    position: relative;
+    z-index: 5;
+    width: 80%;
+    margin-top: 40px;
+}
+
+.chest2{
+    width: 44%;
+        position: relative;
+        top: -60px;
+}
+
+.chest__prizz{
+    position: absolute;
+    z-index: 9;
+    bottom: 144px;  
+}
+
+#prize-name{
+    left: 115px;
+        bottom: 125px;
+    font-size: 37px;    
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 0.933;
+    text-align: center;
+    text-shadow: 0px 6px 20.16px rgba(4, 4, 4, 0.8);
+    position: absolute;
+    z-index: 8;
+}
+
+.button__twist2{
+    background: url(..//images/take.png);
+    font-size: 20px;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    background-repeat: no-repeat;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.53;
+    width: 155px;
+    text-align: left;
+    margin-top: 20px;
+    height: 10%;
+    text-shadow: 0px 6px 20.16px rgba(4, 4, 4, 0.8);
+    position: relative;
+    z-index: 20;
+    align-items: center;
+    justify-content: center;
+}
+.button__twist3{
+    background: url(..//images/take.png);
+    font-size: 20px;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    background-repeat: no-repeat;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.53;
+    width: 155px;
+    text-align: left;
+    margin-top: 20px;
+    height: 10%;
+    text-shadow: 0px 6px 20.16px rgba(4, 4, 4, 0.8);
+    position: relative;
+    z-index: 20;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__btn2{
+    position: absolute;
+        z-index: 25;
+        bottom: 39px;
+        width: 46%;
+        height: 7%;
+        background: url(..//images/btn_twist2.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 14px;
+        display: flex;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 2.551;
+        text-shadow: 0px 6px 20.16px rgba(4, 4, 4, 0.8);
+        align-items: flex-end;
+        justify-content: center;
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .content__modal{
+        height: 70%;
+        width: 50%;
+        background-size: contain;
+        background-position: center;
+        align-items: center;
+    }
+    .content__modal2{
+        height: 70%;
+        width: 53%;
+        background-size: contain;
+        background-position: center;
+        align-items: center;
+    }
+
+    .text2 {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .coins2 {
+        width: 75%;
+    }
+
+    .modal__btn2 {
+        bottom: 30px;
+        width: 27%;
+        height: 7%;
+        font-size: 14px;
+    }
+
+    .modal-content {
+        margin: 10% auto;
+    }
+    .modal-content2 {
+        margin: 10% auto;
+    }
+
+    .chest2{
+        width: 25%;
+    }
+
+    #prize-name{
+        left: 256px;
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-height: 823px) and (max-height: 824px) {
+    .content__modal2 {
+        height: 86.5%;
+    }
+}
+@media screen and (min-width: 424px) and (max-width: 425px) {
+    .content__modal2 {
+        height: 77.5%;
+    }
+}
+@media screen and (min-width: 769px) {
+    .button__twist {
+        left: 41%;
+    }
+    .button__twist7 {
+        left: 41%;
+    }
+
+    .content__modal{
+        height: 70%;
+        width: 38%;
+        background-size: contain;
+        background-position: center;
+        align-items: center;
+    }
+    .content__modal2{
+        height: 70%;
+        width: 32%;
+        background-size: contain;
+        background-position: center;
+        align-items: center;
+    }
+
+    .text2 {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .coins2 {
+        width: 75%;
+    }
+
+    .modal__btn2 {
+        bottom: 30px;
+        width: 21%;
+        height: 7%;
+        font-size: 14px;
+    }
+
+    .modal-content {
+        margin: 7% auto;
+    }
+    .modal-content2 {
+        margin: 7% auto;
+    }
+
+    .chest2{
+        width: 19%;
+        top: -65px;
+    }
+
+    #prize-name{
+        left: 42%;
+        font-size: 35px;
+    }
+
+    .zeus {
+        width: 91%;
+        max-width: 542px;
+        height: 50%;
+    }
+
+    .energy {
+        max-width: 500px;
+        height: 415px;
+    }
+
+    .chest {
+        width: 54%;
+        height: 24%;
+        max-width: 317px;
+    }
+
+    .coins {
+        width: 73%;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .content__modal{
+        height: 70%;
+        width: 30%;
+        background-size: contain;
+        background-position: center;
+        align-items: center;
+    }
+    .content__modal2{
+        height: 70%;
+        width: 30%;
+        background-size: contain;
+        background-position: center;
+        align-items: center;
+    }
+
+    .text2 {
+        width: 60%;
+        margin-top: 20px;
+    }
+
+    .coins2 {
+        width: 75%;
+    }
+
+    .modal__btn2 {
+        bottom: 30px;
+        width: 16%;
+        height: 7%;
+        font-size: 14px;
+    }
+
+    .modal-content {
+        margin: 5% auto;
+    }
+    .modal-content2 {
+        margin: 5% auto;
+    }
+
+    .chest2{
+        width: 19%;
+        top: -117px;
+    }
+
+    #prize-name{
+        left: 43%;
+        font-size: 35px;
+        bottom: 83%;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 424px) {
+    .content__modal2 {
+        height: 72.5%;
+    }
+
+    .text {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .btn__center {
+        width: 22%;
+        top: 30%;
+    }
+
+    .btn__center p {
+        font-size: 13px;
+        left: 9px;
+        top: 34px;
+    }
+
+    .prizz span {
+        font-size: 12px;
+    }
+
+    .prizz span:nth-child(8) {
+        transform: rotate(316deg) translateX(116px) rotate(84deg);
+    }
+
+    .prizz span:nth-child(7) {
+        transform: rotate(270deg) translateX(114px) rotate(-270deg);
+    }
+
+    .prizz span:nth-child(6) {
+        transform: rotate(224deg) translateX(111px) rotate(-270deg);
+    }
+
+    .prizz span:nth-child(5) {
+        transform: rotate(181deg) translateX(120px) rotate(-272deg);
+    }
+
+    .prizz span:nth-child(4) {
+        transform: rotate(136deg) translateX(113px) rotate(-275deg);
+    }
+
+    .prizz span:nth-child(3) {
+        transform: rotate(90deg) translateX(105px) rotate(-270deg);
+    }
+
+    .prizz span:nth-child(2) {
+        transform: rotate(46deg) translateX(110px) rotate(89deg);
+    }
+    .prizz span:nth-child(1) {
+        transform: rotate(-1deg) translateX(117px) rotate(90deg);
+    }
+
+    .ost__text {
+        font-size: 9px;
+        top: 14px;
+        left: 38px;
+    }
+
+    #number {
+        font-size: 16px;
+    }
+
+    .chest {
+        width: 40%;
+    }
+
+    .prizz {
+        height: 337.5px;
+    }
+
+    .content__modal {
+        height: 58.5%;
+    }
+
+    #prize-name {
+        font-size: 28px;
+        bottom: 140px;
+    }
+
+    .text2 {
+        margin-top: 10px;
+    }
+
+    .chest2 {
+        top: -80px;
+    }
+}
+
+@media screen and (min-width: 389px) and (max-width:390px) {
+    .content__modal2 {
+        height: 68.5%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:321px) {
+    .button__twist {
+        width: 61%;
+        font-size: 14px;
+        left: 24%;
+    }
+    .button__twist7 {
+        width: 61%;
+        font-size: 14px;
+        left: 24%;
+    }
+
+    .text {
+        width: 80%;
+    }
+
+    .btn__center {
+        width: 20%;
+        top: 31%;
+    }
+
+    .btn__center p {
+        font-size: 9px;
+        left: 9px;
+        top: 26px;
+    }
+
+    .prizz {
+        height: 288px;
+    }
+
+    .prizz span {
+        font-size: 11.7px;
+    }
+
+    .prizz span:nth-child(8) {
+        transform: rotate(315deg) translateX(99px) rotate(90deg);
+    }
+
+    .prizz span:nth-child(7) {
+        transform: rotate(270deg) translateX(95px) rotate(-270deg);
+    }
+
+    .prizz span:nth-child(6) {
+        transform: rotate(224deg) translateX(99px) rotate(-272deg);
+        font-size: 11px;
+    }
+
+    .prizz span:nth-child(5) {
+        transform: rotate(180deg) translateX(102px) rotate(-273deg);
+    }
+
+    .prizz span:nth-child(4) {
+        transform: rotate(136deg) translateX(98px) rotate(-276deg);
+    }
+
+    .prizz span:nth-child(3) {
+        transform: rotate(90deg) translateX(92px) rotate(-270deg);
+    }
+
+    .prizz span:nth-child(2) {
+        transform: rotate(44deg) translateX(94px) rotate(90deg);
+        font-size: 11px;
+    }
+
+    .prizz span:nth-child(1) {
+        transform: rotate(-1deg) translateX(100px) rotate(89deg);
+    }
+
+    .ost__text {
+        font-size: 7px;
+        top: 13px;
+        left: 33px;
+    }
+
+    #number.small-number {
+        left: 11px;
+    }
+
+    #number {
+        font-size: 14px;
+        top: 7px;
+        left: 9px;
+    }
+
+    .chest {
+        width: 45%;
+    }
+
+    .zeus {
+        width: 100%;
+    }
+
+    .energy {
+        width: 80%;
+    }
+
+    .content__modal {
+        height: 49.5%;
+    }
+
+    #prize-name {
+        font-size: 23px;
+        left: 103px;
+        bottom: 155px;
+    }
+
+    .chest2 {
+        width: 40%;
+        top: -108px;
+    }
+
+    .text2 {
+        margin-top: 0;
+    }
+
+    .text3 {
+        margin-top: 0;
+    }
+
+    .content__modal2 {
+        height: 80.5%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .content__modal2 {
+        width: 28%;
+    }
+
+    .zeus {
+        max-width: 641px;
+        height: 57%;
+    }
+    
+    .energy {
+        max-width: 560px;
+        height: 464px;
+    }
+}
+
+@media screen and (min-width: 343px) and (max-width: 344px) {
+
+    .content__modal2 {
+            height: 65.5%;
+        }
+    .button__twist {
+        max-width: 220px;
+        width: 59%;
+    }
+    .button__twist7 {
+        max-width: 220px;
+        width: 59%;
+    }
+
+    #number.small-number {
+        left: 13px;
+    }
+
+    .prizz{
+        height: 309.59px;
+    }
+
+    .btn__center p {
+        left: 8px;
+        top: 31px;
+        font-size: 12px;
+    }
+
+    #number {
+        font-size: 14px;
+        left: 10px;
+        top: 8px;
+    }
+
+    .ost__text {
+        font-size: 8px;
+        top: 13px;
+        left: 36px;
+    }
+
+    .prizz span:nth-child(8) {
+        transform: rotate(315deg) translateX(107px) rotate(90deg);
+        width: 60px;
+    }
+
+    .prizz span:nth-child(7) {
+        transform: rotate(270deg) translateX(105px) rotate(-270deg);
+    }
+
+    .prizz span:nth-child(6) {
+        transform: rotate(224deg) translateX(105px) rotate(-272deg);
+        width: 60px;
+    }
+
+    .prizz span:nth-child(5) {
+        transform: rotate(180deg) translateX(113px) rotate(-273deg);
+    }
+
+    .prizz span:nth-child(4) {
+        transform: rotate(136deg) translateX(109px) rotate(-273deg);
+    }
+
+    .prizz span:nth-child(3) {
+        transform: rotate(90deg) translateX(101px) rotate(-270deg);
+    }
+
+    .prizz span:nth-child(2) {
+        transform: rotate(46deg) translateX(104px) rotate(88deg);
+        font-size: 10px;
+        width: 65px;
+    }
+
+    .prizz span:nth-child(1) {
+        transform: rotate(-1deg) translateX(106px) rotate(89deg);
+    }
+
+    .content__modal {
+        height: 50.5%;
+    }
+
+    .coins2 {
+        margin-top: 25px;
+    }
+
+    .chest2 {
+        top: -127px;
+    }
+
+    #prize-name {
+        font-size: 31px;
+        bottom: 177px;
+        left: 95px;
+    }
+}
+
+@media screen and (min-width: 389px) and (max-width: 390px) {
+
+    .button__twist {
+        width: 52%;
+    }
+    .button__twist7 {
+        width: 52%;
+    }
+
+    .content__modal {
+        height: 61.5%;
+    }
+
+    .prizz {
+        height: 351px;
+    }
+
+    .btn__center p {
+        left: 12px;
+        top: 36px;
+    }
+
+    .ost__text {
+        left: 39px;
+    }
+
+    .prizz span:nth-child(8) {
+        transform: rotate(314deg) translateX(117px) rotate(90deg);
+    }
+
+    .prizz span:nth-child(7) {
+        transform: rotate(269deg) translateX(120px) rotate(-270deg);
+    }
+
+    .prizz span:nth-child(6) {
+        transform: rotate(224deg) translateX(121px) rotate(-270deg);
+    }
+
+    .prizz span:nth-child(5) {
+        transform: rotate(180deg) translateX(129px) rotate(-271deg);
+    }
+
+    .prizz span:nth-child(4) {
+        transform: rotate(137deg) translateX(123px) rotate(-272deg);
+    }
+
+    .prizz span:nth-child(3) {
+        transform: rotate(92deg) translateX(119px) rotate(-273deg);
+    }
+
+    .prizz span:nth-child(2) {
+        transform: rotate(46deg) translateX(115px) rotate(86deg);
+    }
+
+    .prizz span:nth-child(1) {
+        transform: rotate(-1deg) translateX(120px) rotate(89deg);
+    }
+}
+@media screen and (min-width: 429px) and (max-width: 430px) {    
+
+    .content__modal2 {
+            height: 70%;
+            width: 100%;
+        }
+    .button__twist {
+        max-width: 220px;
+        width: 52%;
+    }
+    .button__twist7 {
+        max-width: 220px;
+        width: 52%;
+    }
+    .prizz {
+        height: 387px;
+        top: 4%;
+    }
+
+    .prizz span:nth-child(8) {
+        transform: rotate(315deg) translateX(131px) rotate(91deg);
+    }
+
+    .prizz span:nth-child(7) {
+        transform: rotate(270deg) translateX(129px) rotate(-270deg);
+    }
+
+    .prizz span:nth-child(6) {
+        transform: rotate(225deg) translateX(120px) rotate(-270deg);
+        width: 74px;
+    }
+
+    .prizz span:nth-child(5) {
+        transform: rotate(181deg) translateX(132px) rotate(-272deg);
+    }
+
+    .prizz span:nth-child(4) {
+        transform: rotate(135deg) translateX(128px) rotate(-274deg);
+    }
+
+    .prizz span:nth-child(3) {
+        transform: rotate(90deg) translateX(121px) rotate(-270deg);
+        width: 60px;
+    }
+
+    .prizz span:nth-child(2) {
+        transform: rotate(44deg) translateX(125px) rotate(94deg);
+        width: 60px;
+    }
+
+    .prizz span:nth-child(1) {
+        transform:rotate(-1deg) translateX(133px) rotate(89deg);
+    }
+
+    .content__modal {
+        height: 35.5%;
+    }
+
+    .chest2 {
+        top: -162px;
+    }
+
+    #prize-name {
+        left: 151px;
+        top: -102px;
+        font-size: 20px;
+    }
+
+    .coins2 {
+        margin-top: 25px;
+    }
+
+    .button__twist2 {
+        font-size: 17px;
+    }
+}
+@media screen and (min-width: 411px) and (max-width: 412px) {
+
+        .content__modal2 {
+                height: 66.5%;
+            }
+    .button__twist {
+        max-width: 220px;
+        width: 52%;
+    }
+    .button__twist7 {
+        max-width: 220px;
+        width: 52%;
+    }
+
+    .prizz{
+        height: 372.59px;
+    }
+
+    .ost__text {
+        top: 15px;
+        left: 42px;
+    }
+
+    .btn__center p {
+        left: 12px;
+        top: 36px;
+    }
+
+    .prizz span:nth-child(8) {
+        transform: rotate(315deg) translateX(123px) rotate(90deg);
+        width: 60px;
+    }
+
+    .prizz span:nth-child(7) {
+        transform: rotate(270deg) translateX(120px) rotate(-270deg);
+    }
+
+    .prizz span:nth-child(6) {
+        transform: rotate(224deg) translateX(122px) rotate(-272deg);
+        width: 60px;
+    }
+
+    .prizz span:nth-child(5) {
+        transform: rotate(180deg) translateX(127px) rotate(-273deg);
+    }
+
+    .prizz span:nth-child(4) {
+        transform: rotate(136deg) translateX(123px) rotate(-276deg);
+    }
+
+    .prizz span:nth-child(3) {
+        transform: rotate(90deg) translateX(120px) rotate(-270deg);
+    }
+
+    .prizz span:nth-child(2) {
+        transform: rotate(44deg) translateX(120px) rotate(90deg);
+        width: 60px;
+    }
+
+    .prizz span:nth-child(1) {
+        transform: rotate(-1deg) translateX(127px) rotate(89deg);
+    }
+
+    .content__modal {
+        height: 60.5%;
+    }
+
+    .chest2 {
+        top: -100px;
+    }
+
+    #prize-name {
+        font-size: 34px;
+        bottom: 165px;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 768px) {
+    .ost__text {
+        top: 16px;
+        left: 44px;
+    }
+    .content__modal {
+        height: 70%;
+        width: 50%;
+    }
+    #number {
+        left: 12px;
+    }
+
+    .button__twist{
+        left: 38%;
+    }
+    .button__twist7{
+        left: 38%;
+    }
+}
+
+@media screen and (min-width: 389px) and (max-width: 390px) {
+
+    #number.small-number {
+        left: 14px;
+        top: 9px;
+    }
+
+    .prizz {
+        height: 351px;
+    }
+
+    .btn__center p {
+        left: 11px;
+        top: 36px;
+    }
+
+    .prizz span:nth-child(8) {
+        transform: rotate(314deg) translateX(117px) rotate(90deg);
+        width: 50px;
+    }
+
+    .prizz span:nth-child(7) {
+        transform: rotate(270deg) translateX(118px) rotate(-270deg);
+    }
+
+    .prizz span:nth-child(6) {
+        transform: rotate(224deg) translateX(114px) rotate(-270deg);
+        width: 50px;
+    }
+
+    .prizz span:nth-child(5) {
+        transform: rotate(180deg) translateX(126px) rotate(-271deg);
+    }
+
+    .prizz span:nth-child(4) {
+        transform: rotate(137deg) translateX(123px) rotate(-272deg);
+    }
+
+    .prizz span:nth-child(3) {
+        transform: rotate(90deg) translateX(113px) rotate(-273deg);
+        width: 50px;
+    }
+
+    .prizz span:nth-child(2) {
+        transform: rotate(46deg) translateX(115px) rotate(86deg);
+        width: 50px;
+    }
+
+    .prizz span:nth-child(1) {
+        transform: rotate(-1deg) translateX(120px) rotate(89deg);
+    }
+}
+@media screen and (min-width: 413px) and (max-width: 414px) {    
+
+        .content__modal2 {
+                height: 70.5%;
+            }
+
+    .button__twist {
+        width: 52%;
+    }
+    .button__twist7 {
+        width: 52%;
+    }
+
+    .prizz {
+        height: 387px;
+        top: 4%;
+    }
+
+    .btn__center p {
+        font-size: 13px;
+        left: 13px;
+        top: 36px;
+    }
+
+    .ost__text {
+        top: 16px;
+        left: 42px;
+    }
+
+    #number {
+        left: 12px;
+    }
+
+    .prizz span:nth-child(8) {
+        transform: rotate(313deg) translateX(131px) rotate(92deg);
+    }
+
+    .prizz span:nth-child(7) {
+        transform: rotate(270deg) translateX(128px) rotate(-272deg);
+    }
+
+    .prizz span:nth-child(6) {
+        transform: rotate(226deg) translateX(126px) rotate(-276deg);
+        width: 50px;
+    }
+
+    .prizz span:nth-child(5) {
+        transform: rotate(181deg) translateX(132px) rotate(-272deg);
+    }
+
+    .prizz span:nth-child(4) {
+        transform: rotate(137deg) translateX(126px) rotate(-274deg);
+    }
+
+    .prizz span:nth-child(3) {
+        transform: rotate(91deg) translateX(121px) rotate(-272deg);
+    }
+
+    .prizz span:nth-child(2) {
+        transform: rotate(44deg) translateX(125px) rotate(94deg);
+        width: 70px;
+    }
+
+    .prizz span:nth-child(1) {
+        transform: rotate(-3deg) translateX(133px) rotate(89deg);
+    }
+
+    .content__modal {
+        height: 60.5%;
+    }
+
+    .chest2 {
+        top: -115px;
+    }
+
+    #prize-name {
+        left: 133px;
+        top: -6px;
+        font-size: 26px;
+    }
+
+    .coins2 {
+        margin-top: 25px;
+    }
+
+    .button__twist2 {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-height: 666px) and (max-height: 667px) {
+    .content__modal2 {
+        height: 82.5%;
+    }
+    .content__modal {
+        height: 72.5%;
+    }
+
+    .chest2 {
+        top: -19px;
+    }
+}
+
+
+@media screen and (min-width: 1023px) and (max-width: 1024px) {
+    .content__modal2 {
+        height: 70.5%;
+    }
+}
+@media screen and (min-width: 374px) and (max-width: 375px) {
+    
+    .content__modal2 {
+            height: 66.5%;
+        }
+
+                .text3 {
+                    margin-top: 0;
+                }
+
+                                .text4 {
+                                    padding: 7px 0;
+                                }
+
+    .button__twist {
+        width: 52%;
+    }
+    .button__twist7 {
+        width: 52%;
+    }
+
+    .prizz span:nth-child(6) {
+        transform: rotate(224deg) translateX(111px) rotate(-270deg);
+        width: 52px;
+    }
+
+    .prizz span:nth-child(2) {
+        transform: rotate(46deg) translateX(110px) rotate(89deg);
+        width: 50px;
+    }
+
+    .prizz span:nth-child(3) {
+        transform: rotate(90deg) translateX(105px) rotate(-270deg);
+        width: 50px;
+    }
+
+    #number.small-number {
+        left: 13px;
+    }
+
+    .chest2 {
+        top: -82px;
+    }
+
+    #prize-name {
+        bottom: 142px;
+    }
+}
+
+@media screen and (min-height: 666px) and (max-height: 667px) {
+    .content__modal2 {
+        height: 82.5%;
+    }
+}
+@media screen and (min-width: 359px) and (max-width: 360px) {
+
+    .modal-content2 {
+            height: 91%;
+        }
+
+    .prizz span:nth-child(4) {
+        transform: rotate(138deg) translateX(107px) rotate(-275deg);
+        width: 58px;
+    }
+
+    #number {
+        font-size: 14px;
+    }
+    
+    .content__modal {
+        height: 64.5%;
+    }
+
+    #prize-name {
+        left: 108px;
+    }
+
+    #number.small-number {
+        left: 13px;
+        top: 8px;
+    }
+
+    .btn__center p {
+        font-size: 12px;
+        left: 9px;
+    }
+
+    .ost__text {
+        font-size: 8px;
+        top: 13px;
+        left: 37px;
+    }
+
+    .prizz span:nth-child(6) {
+        transform: rotate(227deg) translateX(110px) rotate(-274deg);
+        width: 54px;
+    }
+
+    .prizz span:nth-child(8) {
+        transform: rotate(314deg) translateX(116px) rotate(90deg);
+    }
+
+    .prizz span:nth-child(2) {
+        transform: rotate(43deg) translateX(107px) rotate(91deg);
+        width: 72px;
+    }
+}
+
+@media screen and (min-width: 1439px) and (max-width: 1440px) {
+    .content__modal {
+        height: 61%;
+    }
+
+    .chest2 {
+        top: -169px;
+    }
+
+    #prize-name {
+        bottom: 107%;
+    }
+
+    .button__twist {
+        left: 41%;
+        font-size: 18px;
+        max-width: 270px;
+    }
+    .button__twist7 {
+        left: 41%;
+        font-size: 30px;
+        max-width: 270px;
+    }
+}
